@@ -611,6 +611,7 @@
 					1F32E4081C30B6EF00F62E88 = {
 						CreatedOnToolsVersion = 7.2;
 						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
 					};
 					1F32E4121C30B6EF00F62E88 = {
 						CreatedOnToolsVersion = 7.2;
@@ -881,7 +882,7 @@
 		};
 		1F32E41B1C30B6EF00F62E88 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F3065C81C30EE19001E5DF0 /* Debug.xcconfig */;
+			baseConfigurationReference = 1F32E68B1C30B9D100F62E88 /* Kitchen.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -937,7 +938,7 @@
 		};
 		1F32E41C1C30B6EF00F62E88 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F3065CA1C30EE19001E5DF0 /* Release.xcconfig */;
+			baseConfigurationReference = 1F32E68B1C30B9D100F62E88 /* Kitchen.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -990,8 +991,10 @@
 			baseConfigurationReference = 1F32E68B1C30B9D100F62E88 /* Kitchen.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -999,6 +1002,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.toshi0383.TVMLKitchen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
@@ -1011,8 +1015,10 @@
 			baseConfigurationReference = 1F32E68B1C30B9D100F62E88 /* Kitchen.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1020,6 +1026,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.toshi0383.TVMLKitchen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
@@ -1080,7 +1087,7 @@
 		};
 		1F8B437C1C35676400C716A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F3065CB1C30EE19001E5DF0 /* Test.xcconfig */;
+			baseConfigurationReference = 1F32E68B1C30B9D100F62E88 /* Kitchen.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SampleRecipeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
