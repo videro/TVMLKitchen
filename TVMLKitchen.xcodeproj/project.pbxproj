@@ -882,7 +882,6 @@
 		};
 		1F32E41B1C30B6EF00F62E88 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F32E68B1C30B9D100F62E88 /* Kitchen.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -930,7 +929,7 @@
 				SDKROOT = appletvos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.1;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -938,7 +937,6 @@
 		};
 		1F32E41C1C30B6EF00F62E88 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F32E68B1C30B9D100F62E88 /* Kitchen.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -979,7 +977,7 @@
 				SDKROOT = appletvos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.1;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -988,7 +986,6 @@
 		};
 		1F32E41E1C30B6EF00F62E88 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F32E68B1C30B9D100F62E88 /* Kitchen.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
@@ -1012,7 +1009,6 @@
 		};
 		1F32E41F1C30B6EF00F62E88 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F32E68B1C30B9D100F62E88 /* Kitchen.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
@@ -1087,7 +1083,6 @@
 		};
 		1F8B437C1C35676400C716A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F32E68B1C30B9D100F62E88 /* Kitchen.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SampleRecipeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
