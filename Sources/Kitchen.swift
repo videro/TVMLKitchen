@@ -349,7 +349,7 @@ extension Kitchen {
             }
 
             if let data = data,
-                let xml = NSString(data: data, encoding: String.Encoding.utf8.rawValue) as? String
+                let xml = NSString(data: data, encoding: String.Encoding.utf8.rawValue) as String?
             {
                 responseHandler(Result.success(xml))
             } else {
@@ -551,7 +551,7 @@ extension Kitchen: TVApplicationControllerDelegate {
         jsContext.setObject(unsafeBitCast(filterSearchTextBlock, to: AnyObject.self),
             forKeyedSubscript: "filterSearchText" as (NSCopying & NSObjectProtocol)!)
 
-        let loadingTemplate: @convention(block) (Void) -> String =
+        let loadingTemplate: @convention(block) () -> String =
         {
             return LoadingRecipe().xmlString
         }
