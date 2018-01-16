@@ -96,7 +96,7 @@ internal func dismissTVMLModal() {
 }
 
 // MARK: - Utilities
-private func evaluateInTVMLContext(_ js: String, completion: ((Void)->Void)? = nil) {
+private func evaluateInTVMLContext(_ js: String, completion: (()->Void)? = nil) {
     Kitchen.appController.evaluate(inJavaScriptContext: {context in
         context.evaluateScript(js)
     }, completion: {_ in completion?()})
