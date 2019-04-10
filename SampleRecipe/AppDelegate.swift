@@ -14,7 +14,7 @@ import JavaScriptCore
 class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDelegate {
 
     func application(_ application: UIApplication,
-        didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
     {
         _ = prepareMyKitchen(launchOptions, delegate: self)
         return true
